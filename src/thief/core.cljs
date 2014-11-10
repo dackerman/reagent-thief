@@ -66,7 +66,7 @@
                      :left (- x camera)
                      :width width
                      :backgroundColor color }]
-    [:div {:style (merge block-style extra-styles)}]))
+    ^{:key color} [:div {:style (merge block-style extra-styles)}]))
 
 
 (defn draw-bottom-block [{:keys [x y width color] :as block} camera]
@@ -165,8 +165,6 @@
           inside-x (inside-axis px gx gxmax)
           inside-y (inside-axis py gy gymax)
           is-colliding (and inside-x (not inside-y))]
-      (if inside-y
-        (println "p: " player " g: " ground))
       is-colliding)
     false))
 
