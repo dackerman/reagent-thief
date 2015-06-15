@@ -11,7 +11,7 @@ how much we ended up playing it, so I wanted to try to see how quickly I could
 build it.
 
 ### The game in action
-[The game in action](reagent-thief.gif)
+![The game in action](reagent-thief.gif)
 
 ## How to run
 
